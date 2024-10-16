@@ -1,0 +1,14 @@
+.hideMyScroll{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.hideMyScroll {
+  overflow: auto; /* or scroll, depending on your use case */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.hideMyScroll::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}

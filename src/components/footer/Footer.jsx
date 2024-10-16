@@ -5,6 +5,8 @@ import { FaHotel } from "react-icons/fa6";
 import { FaRegCreditCard } from "react-icons/fa6";
 import { MdShoppingCartCheckout } from "react-icons/md";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
 const Footer = () => {
   const [profileState, setProfileState] = useState(false);
   const [foodState, setFoodState] = useState(false);
@@ -70,18 +72,20 @@ const Footer = () => {
     <>
       <div
         className="w-full h-12  flex justify-between items-center px-3 box-border
-        fixed bottom-0"
+        fixed bottom-0 bg-white"
         style={{ boxShadow: "0 -2px 8px rgba(0, 0, 0, 0.2)" }}
       >
-        <div
+        <Link
+          to="/"
           className="cursor-pointer"
           style={{ color: profileState ? "orange" : "black" }}
           onClick={handleProfileState}
         >
-          <CgProfile className="m-auto" />
-          <div className="text-sm">Profile</div>
-        </div>
-        <div
+          <FaHome className="m-auto" />
+          <div className="text-sm">Home</div>
+        </Link>
+        <Link
+          to="/food"
           className="cursor-pointer"
           style={{ color: foodState ? "orange" : "black" }}
           onClick={handleFoodState}
@@ -89,39 +93,43 @@ const Footer = () => {
           <PiBowlFood className="m-auto " />
 
           <div className="text-sm">Food</div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/instamart"
           className="cursor-pointer"
           style={{ color: InstamartState ? "orange" : "black" }}
           onClick={handleInstamartState}
         >
           <FaBasketShopping className="m-auto" />
           <div className="text-sm">Instamart</div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/dineout"
           className="cursor-pointer"
           style={{ color: dineOUtState ? "orange" : "black" }}
           onClick={handleDineOutState}
         >
           <FaHotel className="m-auto" />
           <div className="text-sm">Dineout</div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/card"
           className="cursor-pointer"
           style={{ color: carState ? "orange" : "black" }}
           onClick={handleCarState}
         >
           <FaRegCreditCard className="m-auto" />
           <div className="text-sm">Card</div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/reorder"
           className="cursor-pointer"
           style={{ color: ReorderState ? "orange" : "black" }}
           onClick={handleReorderState}
         >
           <MdShoppingCartCheckout className="m-auto" />
           <div className="text-sm">Reorder</div>
-        </div>
+        </Link>
       </div>
     </>
   );

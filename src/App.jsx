@@ -1,14 +1,16 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import MainSection from "./components/mainSection/MainSection";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <MainSection />
-      <Footer />
+      <div className="hideMyScroll">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
     </>
   );
 }
