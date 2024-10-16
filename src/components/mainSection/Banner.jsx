@@ -1,9 +1,9 @@
 const Banner = () => {
   return (
     <>
-      <div className="w-[94%] m-auto h-80  mt-6 grid grid-cols-2 grid-rows-2  box-border items-center justify-items-center">
+      <div className="w-[94%] m-auto h-80  mt-6 grid grid-cols-2 grid-rows-2  box-border items-center justify-items-center ">
         <div
-          className=" w-44 h-36  rounded-lg text-center py-1 box-border "
+          className=" w-[90%] h-[90%]  rounded-lg text-center py-1 box-border "
           style={{ boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.5)" }}
         >
           <div className="text-[16px] font-bold">FOOD DELIVERY</div>
@@ -19,7 +19,7 @@ const Banner = () => {
           </div>
         </div>
         <div
-          className=" w-44 h-36 rounded-lg box-border p-2"
+          className=" w-[90%] h-[90%] rounded-lg box-border p-2"
           style={{ boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.5)" }}
         >
           <div className="text-[13px] font-bold">INSTAMART</div>
@@ -33,7 +33,7 @@ const Banner = () => {
           </div>
         </div>
         <div
-          className="w-44 h-36  rounded-lg box-border p-2"
+          className="w-[90%] h-[90%] rounded-lg box-border p-2"
           style={{ boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.5)" }}
         >
           <div className="text-[13px] font-bold">DINEOUT</div>
@@ -48,7 +48,7 @@ const Banner = () => {
           </div>
         </div>
         <div
-          className=" w-44 h-36 rounded-lg box-border p-2"
+          className=" w-[90%] h-[90%] rounded-lg box-border p-2"
           style={{ boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.5)" }}
         >
           <div className="text-[11px] font-bold">GENIE</div>
